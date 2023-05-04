@@ -1,5 +1,6 @@
 package com.pizzeria.entity.interfaces;
 
+import com.pizzeria.entity.classes.Pizza;
 import com.pizzeria.entity.classes.User;
 import org.springframework.http.ResponseEntity;
 
@@ -10,4 +11,5 @@ public interface UserInterface {
     List<User> getAllUsers();
     User getUserByID(Long ID);
     void deleteUser(Long ID);
+    void addPizzaToCart(Pizza p);
 }

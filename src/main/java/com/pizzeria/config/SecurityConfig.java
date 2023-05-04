@@ -3,6 +3,7 @@ package com.pizzeria.config;
 import com.pizzeria.services.CustomUserDetailService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -22,10 +23,21 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+//        http.authorizeHttpRequests(requests ->
+//                requests.requestMatchers("/", "/user/registration", "/images/**", "/styles/**").permitAll()
+//                        .requestMatchers("/pizza/action").hasAnyAuthority("ADMIN", "EMPLOYEE")
+//                        .anyRequest())
+//                .formLogin((form) -> form
+//                        .loginPage("/login")
+//                        .defaultSuccessUrl("/")
+//                        .permitAll()
+//                )
+//                .logout()
+//                .logoutSuccessUrl("/");
         http.authorizeHttpRequests((auth) -> {
             try {
-                auth.requestMatchers("/user/registration").permitAll()
-                        .anyRequest().permitAll(); //.authenticated().and().formLogin();
+                auth.requestMatchers("/", "/user/registration", "/images/**", "/styles/**").permitAll()
+                        .anyRequest().authenticated().and().formLogin();
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }

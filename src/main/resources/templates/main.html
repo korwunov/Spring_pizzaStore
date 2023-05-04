@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Пиццерия</title>
+    <link rel="icon" th:src="@{images/logo.png}">
+
+<!--    <link href = "../static/styles/starter.css" type="text/css" rel="stylesheet" />-->
+<!--    <link href = "../static/styles/style.css" type="text/css" rel="stylesheet" />-->
+<!--    <link href = "../static/styles/catalog.css" type="text/css" rel="stylesheet" />-->
+
+    <link th:href = "@{/styles/starter.css}" type="text/css" rel="stylesheet" />
+    <link th:href = "@{/styles/style.css}" type="text/css" rel="stylesheet" />
+    <link th:href = "@{/styles/catalog.css}" type="text/css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header class="mainheader">
+    <div class="container">
+        <div class="pic-burger-container">
+            <div id="menuToggle" style="left: -21em;">
+                <input type="checkbox" id="burger-checkbox">
+
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img id="logo-in-mobile" src="images/logo.png">
+        </div>
+        <img id="logo-in-desktop" src="images/logo.png">
+        <nav class="mainnav">
+            <ul>
+                <li><a th:href="@{/}">Товары</a></li>
+                <li sec:authorize="isAuthenticated()"><p sec:authentication="name"></p></li>
+                <li><a th:href="@{/login}">Войти</a></li>
+                <li><a th:href="@{/user/registration}">Регистрация</a></li>
+
+                <li><a  th:href="@{/user/cart}" ><img src="images/cart25.png"></a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
+<main>
+    <div class="container">
+        <section>
+            <h2>Пицца</h2>
+            <div class="goods-wrapper">
+                <div class="product" th:each="pizza : ${pizzas}">
+                    <img th:src="@{{path}(path=${pizza.getPathToImage()})}" />
+                    <h4 th:text="${pizza.getName()}"></h4>
+                    <h4 th:text="${pizza.getRubPrice()}" class="price"></h4>
+                    <form th:action="@{pizza/addPizzaToCart/{id}(id=${pizza.getID()})}" method="post" ><button><img src="images/cart16.png"></button></form>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<footer id="buttonToTop">Наверх</footer>
+</body>
+
+</html>

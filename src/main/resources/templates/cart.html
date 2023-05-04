@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head>
+        <meta charset="UTF-8">
+        <title>Корзина</title>
+        <link th:href = "@{/styles/starter.css}" type="text/css" rel="stylesheet" />
+        <link th:href = "@{/styles/style.css}" type="text/css" rel="stylesheet" />
+        <link th:href = "@{/styles/catalog.css}" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+    <header class="mainheader">
+      <div class="container">
+        <div class="pic-burger-container">
+          <div id="menuToggle" style="left: -21em;">
+            <input type="checkbox" id="burger-checkbox">
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <img id="logo-in-mobile" src="images/logo.png">
+        </div>
+        <img id="logo-in-desktop" src="images/logo.png">
+        <nav class="mainnav">
+          <ul>
+            <li><a th:href="@{/}">Товары</a></li>
+            <li sec:authorize="isAuthenticated()"><p sec:authentication="name"></p></li>
+            <li><a th:href="@{/login}">Войти</a></li>
+            <li><a th:href="@{/user/registration}">Регистрация</a></li>
+
+            <li><img href="cart.html" src="images/cart25.png"></li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </header>
+    <main>
+      <div class="container">
+        <section>
+          <h2>Корзина</h2>
+            <div class="table">
+                <tr th:each="pizza : ${pizzasInCart}">
+                    <td><img th:src="@{{path}(path=${pizza.getPathToImage()})}" /></td>
+                    <td th:text="${pizza.getName()}"></td>
+                    <td th:text="${getRubPrice}"></td>
+                </tr>
+            </div>
+            <div class="action-block">
+                <span class="price" th:text="@{/user/getCartPrice}"></span>
+            </div>
+        </section>
+      </div>
+    </main>
+    </body>
+</html>

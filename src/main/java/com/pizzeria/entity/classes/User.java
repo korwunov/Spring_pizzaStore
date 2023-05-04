@@ -34,6 +34,9 @@ public class User implements UserDetails {
     @Enumerated(EnumType.STRING)
     private Set<ROLES> role;
 
+    @OneToOne(mappedBy = "cartClient")
+    public Cart cart;
+
     @OneToMany(mappedBy = "client")
     private List<Order> orders;
 
@@ -44,7 +47,6 @@ public class User implements UserDetails {
         return ID.toString() + ": " + firstName + " " + lastName + " " +
                 age + " " + email;
     }
-
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

@@ -1,34 +1,28 @@
 package com.pizzeria.entity.classes;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.pizzeria.entity.interfaces.CartInterface;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
+import javax.annotation.processing.Generated;
+import java.util.List;
+
 @Entity
 @Data
-@Table(name = "pizzas")
-public class Pizza{
+@Table(name = "carts")
+public class Cart {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long ID;
-    @Column(nullable = false)
-    public String name;
-    @Column(nullable = false)
+    @OneToMany(mappedBy = "carts")
+    private List<Pizza> items;
+    @Column
     public int price;
-    @Column(nullable = false)
-    public String pathToImage;
-    @ManyToOne
+    @OneToOne
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
-    public Order lastOrder;
-    @ManyToOne
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    @JsonIgnore
-    public Cart carts;
-
-    public String getRubPrice() {
-        return getPrice() + " руб.";
-    }
+    private User cartClient;
 }
