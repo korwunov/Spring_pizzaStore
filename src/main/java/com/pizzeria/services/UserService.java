@@ -1,5 +1,6 @@
 package com.pizzeria.services;
 
+import com.pizzeria.entity.classes.Order;
 import com.pizzeria.entity.classes.Pizza;
 import com.pizzeria.entity.classes.User;
 import com.pizzeria.entity.interfaces.UserInterface;
@@ -44,6 +45,12 @@ public class UserService implements UserInterface {
     @Transactional
     public void addPizzaToCart(Pizza p) {
         pizzaRepository.findById(p.getID());
+    }
+
+    @Transactional
+    public List<Order> getAllOrders(String userName) {
+        User user = userRepository.findByEmail(userName).get();
+        return user.getOrders();
     }
 
     @Transactional

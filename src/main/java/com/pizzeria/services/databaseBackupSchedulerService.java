@@ -19,8 +19,8 @@ import java.util.List;
 @Configuration
 @ConditionalOnProperty(name = "scheduler.enabled", matchIfMissing = true)
 public class databaseBackupSchedulerService {
-    @Autowired
-    public AddressService as;
+//    @Autowired
+//    public AddressService as;
     @Autowired
     public UserService us;
     private static final String backupDirectoryPath = "/Users/petr/Documents/4sem/JAVA_Spring/lab18/DB_backups/";
@@ -58,19 +58,19 @@ public class databaseBackupSchedulerService {
                 log.error("Error while backup Users table");
             }
 
-            try {
-                log.warn("Starting Addresses backup...");
-                FileWriter addressesFileWriter = new FileWriter(addressesFile, false);
-                List<Address> addressList = as.getAllAddresses();
-                for (Address a : addressList) {
-                    addressesFileWriter.write(a.toString() + System.getProperty("line.separator"));
-                }
-                addressesFileWriter.close();
-                log.info("Addresses table backup complete");
-            }
-            catch(Exception e) {
-                log.error("Error while backup Addresses table");
-            }
+//            try {
+//                log.warn("Starting Addresses backup...");
+//                FileWriter addressesFileWriter = new FileWriter(addressesFile, false);
+//                List<Address> addressList = as.getAllAddresses();
+//                for (Address a : addressList) {
+//                    addressesFileWriter.write(a.toString() + System.getProperty("line.separator"));
+//                }
+//                addressesFileWriter.close();
+//                log.info("Addresses table backup complete");
+//            }
+//            catch(Exception e) {
+//                log.error("Error while backup Addresses table");
+//            }
         }
     }
 }

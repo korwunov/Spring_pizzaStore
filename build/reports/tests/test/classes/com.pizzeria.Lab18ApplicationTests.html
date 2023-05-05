@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Lab18ApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Lab18ApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.pizzeria.html">com.pizzeria</a> &gt; Lab18ApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.026s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">addUser()</td>
+<td class="success">0.026s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>20:08:13.385 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils – Could not detect default configuration classes for test class [com.pizzeria.Lab18ApplicationTests]: Lab18ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:08:13.454 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper – Found @SpringBootConfiguration com.pizzeria.Pizzeria for test class com.pizzeria.Lab18ApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.5)
+
+20:08:13.629 [Test worker] INFO  com.pizzeria.Lab18ApplicationTests – Starting Lab18ApplicationTests using Java 17.0.4.1 with PID 80921 (started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
+20:08:13.630 [Test worker] INFO  com.pizzeria.Lab18ApplicationTests – No active profile set, falling back to 1 default profile: &quot;default&quot;
+20:08:13.946 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:08:13.966 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 17 ms. Found 4 JPA repository interfaces.
+20:08:14.335 [Test worker] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+20:08:14.361 [Test worker] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
+20:08:14.503 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+20:08:14.565 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@17053b5
+20:08:14.565 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+20:08:14.581 [Test worker] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+Hibernate: 
+    
+    alter table if exists pizzas 
+       add column path_to_image varchar(255) not null
+20:08:15.062 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20:08:15.067 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:08:15.290 [Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:08:15.476 [Test worker] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+20:08:15.518 [Test worker] INFO  o.s.s.web.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39eea4f6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c94d4b8, org.springframework.security.web.context.SecurityContextHolderFilter@4bb4cc8c, org.springframework.security.web.header.HeaderWriterFilter@7a553110, org.springframework.security.web.authentication.logout.LogoutFilter@27f6e2c3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@189fb01b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7c16cc25, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4400026, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70e07ef8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24ffe853, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@308d8de8, org.springframework.security.web.access.ExceptionTranslationFilter@534c3b9d, org.springframework.security.web.access.intercept.AuthorizationFilter@298cfe89]
+20:08:15.707 [Test worker] INFO  com.pizzeria.Lab18ApplicationTests – Started Lab18ApplicationTests in 2.189 seconds (process running for 2.767)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6.1</a> at 3 мая 2023 г., 20:08:15</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Пиццерия</title>
+        <link rel="icon" th:src="@{images/logo.png}">
+
+        <!--    <link href = "../static/styles/starter.css" type="text/css" rel="stylesheet" />-->
+        <!--    <link href = "../static/styles/style.css" type="text/css" rel="stylesheet" />-->
+        <!--    <link href = "../static/styles/catalog.css" type="text/css" rel="stylesheet" />-->
+
+        <link th:href = "@{/styles/starter.css}" type="text/css" rel="stylesheet" />
+        <link th:href = "@{/styles/style.css}" type="text/css" rel="stylesheet" />
+        <link th:href = "@{/styles/catalog.css}" type="text/css" rel="stylesheet" />
+        <link th:href = "@{/styles/loginPage.css}" type="text/css" rel="stylesheet" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header class="mainheader">
+            <div class="container">
+                <div class="pic-burger-container">
+                    <div id="menuToggle" style="left: -21em;">
+                        <input type="checkbox" id="burger-checkbox">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <img id="logo-in-mobile" src="images/logo.png">
+                </div>
+                <img id="logo-in-desktop" src="images/logo.png">
+                <nav class="mainnav">
+                    <ul>
+                        <li><a th:href="@{/}">Товары</a></li>
+                        <li><a th:href="@{/login}">Войти</a></li>
+                        <li><img href="cart.html" src="images/cart25.png"> 0</li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </header>
+
+        <br>
+        <div class="login-container">
+            <h2>Авторизация</h2>
+            <form th:action="@{/login}" method="post">
+                <div><label> Электронная почта: <input type="text" name="email" autofocus="autofocus"/> </label></div>
+                <br>
+                <div><label> Пароль: <input type="password" name="password"/> </label></div>
+                <br>
+                <div><input type="submit" value="Войти"/></div>
+            </form>
+
+            <br>
+            <a href="/user/registration">Зарегистрироваться</a>
+        </div>
+
+
+    </body>
+</html>

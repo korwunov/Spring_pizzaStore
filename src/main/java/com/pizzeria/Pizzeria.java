@@ -9,7 +9,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @SpringBootApplication
 @EnableJpaRepositories("com.pizzeria.repositories")	//решило проблему с бинами репозиториев для сервисов
-@EnableScheduling
 @EnableWebSecurity
 @EnableWebMvc
 public class Pizzeria {

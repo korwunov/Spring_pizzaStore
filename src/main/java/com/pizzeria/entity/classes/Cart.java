@@ -17,12 +17,16 @@ public class Cart {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long ID;
-    @OneToMany(mappedBy = "carts")
-    private List<Pizza> items;
+    @OneToMany
+    public List<Pizza> items;
     @Column
     public int price;
     @OneToOne
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
     private User cartClient;
+    @Override
+    public String toString() {
+        return "CART ID: " + this.ID + "; owner ID: " + this.cartClient.getID();
+    }
 }

@@ -19,10 +19,8 @@ public class Pizza{
     public int price;
     @Column(nullable = false)
     public String pathToImage;
-    @ManyToOne
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    @JsonIgnore
-    public Order lastOrder;
+    @Column
+    public boolean show;
     @ManyToOne
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
@@ -30,5 +28,9 @@ public class Pizza{
 
     public String getRubPrice() {
         return getPrice() + " руб.";
+    }
+    @Override
+    public String toString() {
+        return "PIZZA ID: " + this.ID + "; NAME: " + this.name + "; PRICE: " + this.price + "; IS SHOW: " + this.show;
     }
 }

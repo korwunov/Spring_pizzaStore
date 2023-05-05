@@ -19,8 +19,10 @@ public class Order {
     private Long ID;
     @Column
     public ORDER_STATUS status;
-    @OneToMany(mappedBy = "lastOrder", fetch = FetchType.LAZY)
-    private List<Pizza> items;
+    @OneToOne
+    private Cart itemsInOrder;
+    @Column
+    private int price;
     @ManyToOne
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore

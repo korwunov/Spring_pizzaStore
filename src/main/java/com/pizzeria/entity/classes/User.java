@@ -40,8 +40,8 @@ public class User implements UserDetails {
     @OneToMany(mappedBy = "client")
     private List<Order> orders;
 
-    @OneToMany(mappedBy = "owner")
-    private List<Address> addresses;
+//    @OneToMany(mappedBy = "owner")
+//    private List<Address> addresses;
     @Override
     public String toString() {
         return ID.toString() + ": " + firstName + " " + lastName + " " +

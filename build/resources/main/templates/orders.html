@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+    <link th:href = "@{/styles/starter.css}" type="text/css" rel="stylesheet" />
+    <link th:href = "@{/styles/style.css}" type="text/css" rel="stylesheet" />
+    <link th:href = "@{/styles/orders.css}" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<header class="mainheader">
+    <div class="container">
+        <div class="pic-burger-container">
+            <div id="menuToggle" style="left: -21em;">
+                <input type="checkbox" id="burger-checkbox">
+
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+        <img id="logo-in-desktop" th:src="@{/images/logo.png}">
+        <nav class="mainnav">
+            <ul>
+                <li><a th:href="@{/}">Товары</a></li>
+                <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Выйти</a></li>
+                <li><a sec:authorize="isAuthenticated()" th:href="@{/user/cart}" ><img th:src="@{/images/cart25.png}"></a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
+<main>
+    <div class="container">
+        <section>
+            <h2>Мои заказы</h2>
+            <div class="table">
+                <tr th:each="order : ${allOrders}">
+                    <div class="table_item">
+                        <span><td th:text="${order.getID()}"></td></span>
+                        <div>
+<!--                            <tr th:each="item : ${order.getItemsInOrder().getItems()}">-->
+<!--                                <span><td th:text="${item.getName()}"></td></span>-->
+<!--                            </tr>-->
+                        </div>
+                        <span class="table_item_status"><td th:text="${order.getStatus()}"></td></span>
+                        <span class="table_item_price"><td th:text="${order.getPrice()}"></td></span>
+                        <span class="table_item_name"><td th:text="${order.getAddress()}"></td></span>
+                        <form th:action="@{/order/cancelOrder/{id}(id=${order.getID()})}" method="post" ><button><img th:src="@{/images/cancel.png}"></button></form>
+                    </div>
+                </tr>
+            </div>
+            <div class="action-block" th:unless="${anyOrders}">
+                <p>Заказы отсутствуют, сделайте свой первый!</p>
+            </div>
+        </section>
+    </div>
+</main>
+</body>
+</html>

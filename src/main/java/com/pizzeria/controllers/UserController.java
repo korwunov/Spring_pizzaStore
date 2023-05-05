@@ -1,9 +1,11 @@
 package com.pizzeria.controllers;
 
 import com.pizzeria.config.SecurityConfig;
+import com.pizzeria.entity.classes.Order;
 import com.pizzeria.entity.classes.Pizza;
 import com.pizzeria.entity.classes.User;
 import com.pizzeria.entity.enums.ROLES;
+import com.pizzeria.services.PizzaService;
 import com.pizzeria.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,6 +23,9 @@ import java.util.List;
 public class UserController {
     @Autowired
     public UserService service;
+
+    @Autowired
+    public PizzaService pizzaService;
 
     @PostMapping("/registration")
     public String addUser(@Validated @ModelAttribute("u") User u, Model model) {
@@ -66,21 +71,24 @@ public class UserController {
     public String getUserCart(Model model) {
         String user = SecurityContextHolder.getContext().getAuthentication().getName();
         List<Pizza> p = service.getUsersCartContains(user);
+        int price = service.getUserCartPrice(user);
+        boolean orderEnable = price > 0;
+        String priceSTR = String.valueOf(price) + " руб.";
         model.addAttribute("pizzasInCart", p);
+        model.addAttribute("enableOrder", orderEnable);
+        model.addAttribute("cartPrice", priceSTR);
         return "cart";
     }
 
-    @GetMapping("/getCartPrice")
-    @ResponseBody
-    public int getCartPrice() {
-        String user = SecurityContextHolder.getContext().getAuthentication().getName();
-        return service.getUserCartPrice(user);
+    @GetMapping("/orders")
+    public String ordersPage(Model model) {
+        String userName = SecurityContextHolder.getContext().getAuthentication().getName();
+        List<Order> orders = service.getAllOrders(userName);
+        model.addAttribute("anyOrders", orders.size() > 0);
+        model.addAttribute("allOrders", orders);
+        return "orders";
     }
 
-//    @PostMapping("/addToCart")
-//    public HttpStatus addToCart(@RequestParam Long ID) {
-//        //String user = SecurityContextHolder.getContext().getAuthentication().getName();
-//
-//    }
+
 
 }

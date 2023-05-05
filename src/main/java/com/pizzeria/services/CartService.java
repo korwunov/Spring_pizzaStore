@@ -31,4 +31,11 @@ public class CartService implements CartInterface {
         c.price += price;
         cartRepository.save(c);
     }
+
+    public void removePizzaPrice(Long pizzaID, Long userID) {
+        int price = pizzaRepository.findById(pizzaID).get().getPrice();
+        Cart c = userRepository.findById(userID).get().getCart();
+        c.price -= price;
+        cartRepository.save(c);
+    }
 }

@@ -26,6 +26,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.thymeleaf:thymeleaf:3.1.1.RELEASE'
 	implementation 'org.thymeleaf:thymeleaf-spring6:3.1.1.RELEASE'
+	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6:3.1.1.RELEASE'
+
 	testImplementation 'org.springframework.security:spring-security-test'
 	compileOnly 'javax.servlet:jstl:1.2'
 	compileOnly "org.apache.tomcat.embed:tomcat-embed-jasper"

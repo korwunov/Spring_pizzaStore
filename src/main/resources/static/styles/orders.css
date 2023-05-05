@@ -1,0 +1,28 @@
+.table_item {
+    border-style: none;
+    border-radius: 20px;
+    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.4);
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    transition: 0.5s;
+}
+.table_item > form > button {
+    margin-right: 40px;
+}
+
+.table_item > span {
+    font-size: 1.5em;
+}
+
+.table_item:hover {
+    transform: scale(1.05);
+	box-shadow: 5px 5px 50px -4px rgba(252, 105, 25, 0.6);
+}
+
+.action-block {
+    display: flex;
+    justify-content: space-around;
+}
