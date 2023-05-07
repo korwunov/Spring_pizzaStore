@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Корзина</title>
@@ -24,6 +25,7 @@
         <nav class="mainnav">
             <ul>
                 <li><a th:href="@{/}">Товары</a></li>
+                <li style="color: white;" sec:authorize="isAuthenticated()" sec:authentication="name"></li>
                 <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Выйти</a></li>
                 <li><a sec:authorize="isAuthenticated()" th:href="@{/user/cart}" ><img th:src="@{/images/cart25.png}"></a></li>
             </ul>
@@ -35,17 +37,21 @@
 <main>
     <div class="container">
         <section>
-            <h2>Мои заказы</h2>
+            <h2 sec:authorize="hasRole('ROLE_USER')">Мои заказы</h2>
+            <h2 sec:authorize="hasRole('ROLE_ADMIN')">Все заказы</h2>
             <div class="table">
                 <tr th:each="order : ${allOrders}">
                     <div class="table_item">
                         <span><td th:text="${order.getID()}"></td></span>
-                        <div>
-<!--                            <tr th:each="item : ${order.getItemsInOrder().getItems()}">-->
-<!--                                <span><td th:text="${item.getName()}"></td></span>-->
-<!--                            </tr>-->
-                        </div>
-                        <span class="table_item_status"><td th:text="${order.getStatus()}"></td></span>
+                        <span><td sec:authorize="hasRole('ROLE_ADMIN') || hasRole('ROLE_EMPLOYEE')" th:utext="${order.getClient().getID()}"></td></span>
+                        <span class="table_item_status"><td sec:authorize="hasRole('ROLE_USER')" th:text="${order.getStatus()}"></td></span>
+                        <span class="table_change_status">
+                            <td sec:authorize="hasRole('ROLE_ADMIN') || hasRole('ROLE_EMPLOYEE')" >
+                                <form th:action="@{/order/}" method="post">
+
+                                </form>
+                            </td>
+                        </span>
                         <span class="table_item_price"><td th:text="${order.getPrice()}"></td></span>
                         <span class="table_item_name"><td th:text="${order.getAddress()}"></td></span>
                         <form th:action="@{/order/cancelOrder/{id}(id=${order.getID()})}" method="post" ><button><img th:src="@{/images/cancel.png}"></button></form>

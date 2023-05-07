@@ -31,10 +31,10 @@ public class UserController {
     public String addUser(@Validated @ModelAttribute("u") User u, Model model) {
         try {
             u.setPassword(SecurityConfig.passEncoder().encode(u.getPassword()));
-            u.setRole(Collections.singleton(ROLES.USER));
+            u.setRole(Collections.singleton(ROLES.ROLE_USER));
             u.setEnabled(true);
             service.addUser(u);
-            return "main";
+            return "redirect:/";
         }
         catch(Exception e) {
              model.addAttribute("errorMessage", "Что-то пoшло не так, попробуйте перезагрузить страницу");
@@ -57,7 +57,8 @@ public class UserController {
         return service.getUserByID(ID);
     }
 
-    @DeleteMapping("/delete{id}")
+    @DeleteMapping("/delete{ID}")
+    @ResponseBody
     public void deleteUser(@RequestParam Long ID) throws Exception {
         try {
             service.deleteUser(ID);
@@ -89,6 +90,14 @@ public class UserController {
         return "orders";
     }
 
+    @PostMapping("/setAdminRole/{userID}")
+    public void setAdminRole(@PathVariable Long userID) {
+        service.setAdminRole(userID);
+    }
 
+    @PostMapping("/setEmployeeRole/{userID}")
+    public void setEmployeeRole(@PathVariable Long userID) {
+        service.setEmployeeRole(userID);
+    }
 
 }

@@ -27,14 +27,13 @@
                 <span></span>
                 <span></span>
             </div>
-            <img id="logo-in-mobile" src="images/logo.png">
+            <img id="logo-in-mobile" th:src="@{/images/logo.png}">
         </div>
-        <img id="logo-in-desktop" th:src="@{images/logo.png}">
+        <img id="logo-in-desktop" th:src="@{/images/logo.png}">
         <nav class="mainnav">
             <ul>
                 <li><a th:href="@{/}">Товары</a></li>
                 <li><a th:href="@{/login}">Войти</a></li>
-                <li><img href="cart.html" th:src="@{images/cart25.png}"> 0</li>
             </ul>
         </nav>
 

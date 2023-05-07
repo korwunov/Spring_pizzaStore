@@ -37,6 +37,8 @@ public class SecurityConfig {
         http.authorizeHttpRequests((auth) -> {
             try {
                 auth.requestMatchers("/", "/user/registration", "/images/**", "/styles/**").permitAll()
+                        .requestMatchers("/user/delete{ID}", "/user", "/get{ID}", "/pizza/action", "/changeOrderStatus/{status}/{orderID}/").hasAnyAuthority("ROLE_ADMIN", "ROLE_EMPLOYEE")
+                        .requestMatchers("/user/setAdminRole/{userID}", "/user/setEmployeeRole/{userID}").hasAnyAuthority("ROLE_ADMIN")
                         .anyRequest().authenticated().and().formLogin();
             } catch (Exception e) {
                 throw new RuntimeException(e);

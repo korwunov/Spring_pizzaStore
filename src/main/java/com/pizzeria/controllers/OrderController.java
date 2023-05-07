@@ -1,6 +1,7 @@
 package com.pizzeria.controllers;
 
 import com.pizzeria.entity.classes.Address;
+import com.pizzeria.entity.enums.ORDER_STATUS;
 import com.pizzeria.services.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -28,6 +29,12 @@ public class OrderController {
     public String cancelOrder(@PathVariable Long orderID) {
         String userName = SecurityContextHolder.getContext().getAuthentication().getName();
         oService.cancelOrder(orderID);
+        return "orders";
+    }
+
+    @PostMapping("/changeOrderStatus/{status}/{orderID}/")
+    public String setOrderStatus(@PathVariable ORDER_STATUS status, Long orderID) {
+        oService.setStatus(orderID, status);
         return "orders";
     }
 }

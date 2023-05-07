@@ -22,6 +22,8 @@ public class OrderService {
     private UserRepository userRepository;
     @Autowired
     private PizzaService pizzaService;
+    @Autowired
+    private MailService mailService;
 
     @Transactional
     public void createOrder(String userName, String address) {
@@ -38,6 +40,8 @@ public class OrderService {
         order.setCreationDate(dateNow);
         pizzaService.cleanCart(userName);
         orderRepository.save(order);
+        mailService.sendNewOrderEmail(user, order);
+
     }
 
     @Transactional
@@ -45,12 +49,14 @@ public class OrderService {
         Order order = orderRepository.findById(orderID).get();
         order.setStatus(status);
         orderRepository.save(order);
+        mailService.sendChangeOrderStatusEmail(order.getClient(), order);
     }
 
     @Transactional
     public void cancelOrder(Long orderID) {
         Order order = orderRepository.findById(orderID).get();
         order.setStatus(ORDER_STATUS.CLOSED);
+        mailService.sendCancelOrderEmail(order.getClient(), order);
         orderRepository.deleteById(orderID);
     }
 }

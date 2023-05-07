@@ -24,8 +24,9 @@
         <nav class="mainnav">
           <ul>
               <li><a th:href="@{/}">Товары</a></li>
-              <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Выйти</a></li>
               <li sec:authorize="isAuthenticated()"><a th:href="@{/user/orders}">Мои заказы</a></li>
+              <li style="color: white;" sec:authorize="isAuthenticated()" sec:authentication="name"></li>
+              <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Выйти</a></li>
           </ul>
         </nav>
 

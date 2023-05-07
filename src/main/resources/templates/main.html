@@ -36,7 +36,9 @@
                 <li><a th:href="@{/}">Товары</a></li>
                 <li sec:authorize="!isAuthenticated()"><a th:href="@{/login}">Войти</a></li>
                 <li sec:authorize="!isAuthenticated()"><a th:href="@{/user/registration}">Регистрация</a></li>
-                <li sec:authorize="isAuthenticated()"><a th:href="@{/user/orders}">Мои заказы</a></li>
+                <li sec:authorize="isAuthenticated() && hasRole('ROLE_USER')"><a th:href="@{/user/orders}">Мои заказы</a></li>
+                <li sec:authorize="isAuthenticated() && (hasRole('ROLE_ADMIN') || hasRole('ROLE_EMPLOYEE'))"><a th:href="@{/user/orders}">Все заказы</a></li>
+                <li style="color: white;" sec:authorize="isAuthenticated()" sec:authentication="name"></li>
                 <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Выйти</a></li>
                 <li><a sec:authorize="isAuthenticated()" th:href="@{/user/cart}" ><img src="images/cart25.png"></a></li>
             </ul>
