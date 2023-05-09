@@ -1,54 +1,48 @@
-406  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 44709 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
-410  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
-441  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-442  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-782  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-815  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
-1349 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-1354 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-1355 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-1355 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
-1389 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-1389 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 947 ms
-1517 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-1540 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
-1673 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-1724 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@35acfc6d
-1725 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-1738 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2239 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2244 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-2480 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2622 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
-2646 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3994c1fb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@634cf68d, org.springframework.security.web.context.SecurityContextHolderFilter@79112c75, org.springframework.security.web.header.HeaderWriterFilter@5b1cb535, org.springframework.security.web.authentication.logout.LogoutFilter@3e29cfc5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@52911266, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@63155061, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1b724e74, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20294f1c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f058c6e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22dbeafc, org.springframework.security.web.access.ExceptionTranslationFilter@346f742e, org.springframework.security.web.access.intercept.AuthorizationFilter@3829344b]
-2789 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
-2808 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-2830 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-2837 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
-2847 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.618 seconds (process running for 2.934)
-8573 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
-8573 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
-8575 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
-124251 [http-nio-8080-exec-6] INFO  com.pizzeria.services.MailService – NEW ORDER EMAIL SENDED TO: test@mail.ru ORDER ID: 602
-168738 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] – Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 550 not local sender over smtp
-;
-  nested exception is:
-	org.eclipse.angus.mail.smtp.SMTPSenderFailedException: 550 not local sender over smtp
+409  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 74977 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
+414  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
+446  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+446  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+788  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+819  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
+1399 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1405 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1405 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1405 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
+1441 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1441 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 995 ms
+1529 [restartedMain] WARN  o.a.c.c.C.[Tomcat].[localhost].[/] – Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [89589BC5F519FDAF61DA2D9A2EBF1220]
+1604 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1640 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
+1808 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+1861 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5cf906bf
+1862 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+1877 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2410 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2415 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2665 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2813 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+2836 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5ae0a481, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b6df90e, org.springframework.security.web.context.SecurityContextHolderFilter@14fb464b, org.springframework.security.web.header.HeaderWriterFilter@2b40254d, org.springframework.security.web.authentication.logout.LogoutFilter@c9de1c0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@48bd2239, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5dc81539, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3ed2d050, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f822b77, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@714494ce, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6afd1e63, org.springframework.security.web.access.ExceptionTranslationFilter@683232fc, org.springframework.security.web.access.intercept.AuthorizationFilter@5c8331fe]
+2987 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+3007 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+3030 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3038 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3049 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.819 seconds (process running for 3.176)
+11225 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+11225 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+11226 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+31002 [http-nio-8080-exec-5] INFO  com.pizzeria.services.MailService – CANCEL ORDER EMAIL SENDED TO: test@mail.ru ORDER ID: 452
+37768 [http-nio-8080-exec-8] INFO  com.pizzeria.services.MailService – CANCEL ORDER EMAIL SENDED TO: test@mail.ru ORDER ID: 452
+45328 [http-nio-8080-exec-10] INFO  com.pizzeria.services.MailService – CANCEL ORDER EMAIL SENDED TO: test@mail.ru ORDER ID: 602
+57631 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] – Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 550 Message was not accepted -- invalid mailbox.  Local mailbox testrole@mail.ru is unavailable: user not found
 ; message exceptions (1) are:
-Failed message 1: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 550 not local sender over smtp
-;
-  nested exception is:
-	org.eclipse.angus.mail.smtp.SMTPSenderFailedException: 550 not local sender over smtp
+Failed message 1: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 550 Message was not accepted -- invalid mailbox.  Local mailbox testrole@mail.ru is unavailable: user not found
 ] with root cause
-org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 550 not local sender over smtp
-;
-  nested exception is:
-	org.eclipse.angus.mail.smtp.SMTPSenderFailedException: 550 not local sender over smtp
+org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 550 Message was not accepted -- invalid mailbox.  Local mailbox testrole@mail.ru is unavailable: user not found
 
 	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:491)
 	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:323)
 	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:312)
-	at com.pizzeria.services.MailService.sendCancelOrderEmail(MailService.java:68)
+	at com.pizzeria.services.MailService.sendCancelOrderEmail(MailService.java:70)
 	at com.pizzeria.services.OrderService.cancelOrder(OrderService.java:59)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -186,145 +180,34 @@ org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.m
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-198187 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-198197 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-198199 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-441  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 44978 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
-442  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
-472  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-472  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-788  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-816  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 23 ms. Found 4 JPA repository interfaces.
-1454 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-1459 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-1459 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-1459 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
-1489 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-1490 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1018 ms
-1577 [restartedMain] WARN  o.a.c.c.C.[Tomcat].[localhost].[/] – Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [1DDAB3CCA2CEBEA378DDAF8F54698735]
-1641 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-1669 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
-1787 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-1838 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4a3ff189
-1838 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-1851 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2338 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2343 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-2580 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2716 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
-2739 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5c8331fe, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48bd2239, org.springframework.security.web.context.SecurityContextHolderFilter@20d5ad20, org.springframework.security.web.header.HeaderWriterFilter@66cdaa75, org.springframework.security.web.authentication.logout.LogoutFilter@10e1ff3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@58798a75, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@765dd365, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@8d9b47f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60962fd3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f822b77, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f296a5b, org.springframework.security.web.access.ExceptionTranslationFilter@49a379a0, org.springframework.security.web.access.intercept.AuthorizationFilter@270a93a6]
-2875 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
-2895 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-2916 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-2923 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
-2934 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.667 seconds (process running for 3.027)
-5134 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
-5134 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
-5136 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 2 ms
-72701 [http-nio-8080-exec-2] INFO  com.pizzeria.services.MailService – NEW ORDER EMAIL SENDED TO: jvtstml@gmail.com ORDER ID: 652
-119517 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-119524 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-119526 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-392  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 45123 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
-394  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
-425  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-425  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-721  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-748  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 22 ms. Found 4 JPA repository interfaces.
-1252 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-1257 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-1257 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-1257 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
-1289 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-1289 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 864 ms
-1433 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-1458 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
-1575 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-1623 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1986d026
-1624 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-1640 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2132 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2139 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-2376 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2522 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
-2543 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@736d0b75, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@746c9246, org.springframework.security.web.context.SecurityContextHolderFilter@41feaac6, org.springframework.security.web.header.HeaderWriterFilter@65aa8e40, org.springframework.security.web.authentication.logout.LogoutFilter@68da5d6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@64cc694f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@45748ccf, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7e6a5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5432ac9b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a06b398, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20c1f2a4, org.springframework.security.web.access.ExceptionTranslationFilter@d1b90c6, org.springframework.security.web.access.intercept.AuthorizationFilter@39895e64]
-2671 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
-2692 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-2714 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-2721 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
-2731 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.509 seconds (process running for 2.815)
-250294 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-250300 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-250301 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-371  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 45413 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
-373  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
-402  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-402  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-704  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-731  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 23 ms. Found 4 JPA repository interfaces.
-1233 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-1238 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-1238 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-1238 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
-1270 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-1271 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 868 ms
-1419 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-1444 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
-1557 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-1608 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1986d026
-1609 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-1636 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2112 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2117 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-2337 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2476 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
-2495 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@736d0b75, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@746c9246, org.springframework.security.web.context.SecurityContextHolderFilter@41feaac6, org.springframework.security.web.header.HeaderWriterFilter@65aa8e40, org.springframework.security.web.authentication.logout.LogoutFilter@68da5d6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@64cc694f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@45748ccf, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7e6a5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5432ac9b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a06b398, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20c1f2a4, org.springframework.security.web.access.ExceptionTranslationFilter@d1b90c6, org.springframework.security.web.access.intercept.AuthorizationFilter@39895e64]
-2621 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
-2638 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-2660 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-2667 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
-2677 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.469 seconds (process running for 2.764)
-10752 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
-10752 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
-10753 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
-19276 [http-nio-8080-exec-1] INFO  com.pizzeria.services.MailService – CANCEL ORDER EMAIL SENDED TO: jvtstml@gmail.com ORDER ID: 652
-97547 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-97556 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-97557 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-386  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 45589 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
-387  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
-421  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-421  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-745  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-774  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 24 ms. Found 4 JPA repository interfaces.
-1277 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-1282 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-1282 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-1282 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
-1316 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-1316 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 895 ms
-1475 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-1499 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
-1621 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-1673 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1bdaa4b4
-1674 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-1690 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2190 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2194 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-2439 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2570 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
-2588 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10a1243b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45162005, org.springframework.security.web.context.SecurityContextHolderFilter@7ec23e9, org.springframework.security.web.header.HeaderWriterFilter@498ca88f, org.springframework.security.web.authentication.logout.LogoutFilter@49a379a0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5aff73cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73d162e2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5dc81539, org.springframework.security.web.access.ExceptionTranslationFilter@4323f7c, org.springframework.security.web.access.intercept.AuthorizationFilter@714494ce]
-2724 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
-2746 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-2768 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-2776 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
-2786 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.566 seconds (process running for 2.876)
-92159 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
-92160 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
-92163 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 3 ms
-92250 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] – Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.Exception: Ошибка удаления пользователя] with root cause
-java.lang.Exception: Ошибка удаления пользователя
-	at com.pizzeria.controllers.UserController.deleteUser(UserController.java:67)
+94785 [http-nio-8080-exec-6] INFO  com.pizzeria.services.MailService – CANCEL ORDER EMAIL SENDED TO: test@mail.ru ORDER ID: 502
+111019 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] – Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 550 Message was not accepted -- invalid mailbox.  Local mailbox testrole@mail.ru is unavailable: user not found
+; message exceptions (1) are:
+Failed message 1: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 550 Message was not accepted -- invalid mailbox.  Local mailbox testrole@mail.ru is unavailable: user not found
+] with root cause
+org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 550 Message was not accepted -- invalid mailbox.  Local mailbox testrole@mail.ru is unavailable: user not found
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:491)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:323)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:312)
+	at com.pizzeria.services.MailService.sendCancelOrderEmail(MailService.java:70)
+	at com.pizzeria.services.OrderService.cancelOrder(OrderService.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.pizzeria.services.OrderService$$SpringCGLIB$$0.cancelOrder(<generated>)
+	at com.pizzeria.controllers.OrderController.cancelOrder(OrderController.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -338,8 +221,8 @@ java.lang.Exception: Ошибка удаления пользователя
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
-	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:569)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:563)
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
@@ -370,6 +253,21 @@ java.lang.Exception: Ошибка удаления пользователя
 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:173)
 	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:134)
 	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:186)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:173)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:134)
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:186)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:173)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:134)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:188)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:174)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:186)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:173)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:134)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:186)
 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:173)
 	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:134)
@@ -430,177 +328,435 @@ java.lang.Exception: Ошибка удаления пользователя
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-131886 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-131901 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-131905 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-399  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 45739 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
-401  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
-431  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-431  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-779  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-817  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 33 ms. Found 4 JPA repository interfaces.
-1294 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-1298 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-1299 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-1299 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
-1329 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-1329 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 897 ms
-1477 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-1498 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
-1615 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-1663 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@38ce0e6c
-1664 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-1677 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2181 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2187 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-2424 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2554 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
-2572 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@52214880, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65b42f28, org.springframework.security.web.context.SecurityContextHolderFilter@46a8d747, org.springframework.security.web.header.HeaderWriterFilter@37f8bf4c, org.springframework.security.web.authentication.logout.LogoutFilter@4d9c6ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ef79e08, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f0b0076, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@705f69cd, org.springframework.security.web.access.ExceptionTranslationFilter@65657a34, org.springframework.security.web.access.intercept.AuthorizationFilter@691bd723]
-2701 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
-2719 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-2740 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-2748 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
-2758 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.537 seconds (process running for 2.855)
-7977 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
-7977 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
-7981 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 4 ms
-411  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 45791 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
-412  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
-444  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-444  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-416  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 45814 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
-417  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
-448  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-448  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-808  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-840  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 28 ms. Found 4 JPA repository interfaces.
-1362 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-1367 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-1368 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-1368 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
-1400 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-1401 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 952 ms
-1535 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-1560 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
-1688 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-1743 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5fd4b897
-1743 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-1759 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2285 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2291 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-2534 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2682 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
-2701 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34fc8d60, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33a52a21, org.springframework.security.web.context.SecurityContextHolderFilter@749c318b, org.springframework.security.web.header.HeaderWriterFilter@53450fe5, org.springframework.security.web.authentication.logout.LogoutFilter@5f72d3bc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52ccdf28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@632e9461, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9779390, org.springframework.security.web.access.ExceptionTranslationFilter@3ac3f4ea, org.springframework.security.web.access.intercept.AuthorizationFilter@38e7f721]
-2857 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
-2881 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-2905 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-2914 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
-2925 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.688 seconds (process running for 3.04)
-12470 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
-12471 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
-12472 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
-387  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 45997 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
-389  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
-420  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-420  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-746  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-779  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 27 ms. Found 4 JPA repository interfaces.
-1261 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-1266 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-1267 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-1267 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
-1298 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-1298 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 878 ms
-1414 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-1439 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
-1561 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-1614 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2e770386
-1615 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-1628 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2104 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2108 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-2325 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2456 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
-2472 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68d12723, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e8a59ed, org.springframework.security.web.context.SecurityContextHolderFilter@212233d8, org.springframework.security.web.header.HeaderWriterFilter@6352da69, org.springframework.security.web.authentication.logout.LogoutFilter@48f72b70, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43040a17, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5fe2d70d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5dcfccae, org.springframework.security.web.access.ExceptionTranslationFilter@5e4e9adf, org.springframework.security.web.access.intercept.AuthorizationFilter@653e7e7a]
-2599 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
-2617 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-2636 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-2643 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
-2654 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.444 seconds (process running for 2.768)
-69007 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
-69008 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
-69010 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
-137828 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-137847 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-137849 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-387  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 46151 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
-389  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
-419  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-419  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-725  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-755  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
-1251 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-1256 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-1257 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-1257 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
-1288 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-1289 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 870 ms
-1420 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-1444 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
-1565 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-1628 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5cd7fd2d
-1629 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-1642 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2123 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2127 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-2364 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2486 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
-2506 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4a71155a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a00aaf9, org.springframework.security.web.context.SecurityContextHolderFilter@3c2e7f8, org.springframework.security.web.header.HeaderWriterFilter@5ffb58c9, org.springframework.security.web.authentication.logout.LogoutFilter@f058c6e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@705c17aa, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@67d600ca, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7f73c57f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20e4c73e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d35f664, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23b8ec92, org.springframework.security.web.access.ExceptionTranslationFilter@46487d89, org.springframework.security.web.access.intercept.AuthorizationFilter@5642ad46]
-2639 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
-2656 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+149553 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+149558 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+149560 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+368  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 75044 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
+369  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
+397  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+397  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+699  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+729  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+1209 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1216 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1216 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1216 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
+1247 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1247 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 850 ms
+1330 [restartedMain] WARN  o.a.c.c.C.[Tomcat].[localhost].[/] – Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [6662C24F0FDBFF77DAB982DA73CD4173]
+1389 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1415 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
+1531 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+1582 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@67538bfd
+1583 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+1599 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2085 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2090 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2315 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2445 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+2468 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e938edd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6de3ed2e, org.springframework.security.web.context.SecurityContextHolderFilter@1a9837ff, org.springframework.security.web.header.HeaderWriterFilter@4b45ae7a, org.springframework.security.web.authentication.logout.LogoutFilter@5bc08920, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@c9de1c0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@683232fc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5771b262, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cab82ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70058343, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33ca0f65, org.springframework.security.web.access.ExceptionTranslationFilter@4c016032, org.springframework.security.web.access.intercept.AuthorizationFilter@7d1d9817]
+2602 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2619 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+2641 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+2648 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+2662 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.456 seconds (process running for 2.764)
+5822 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+5822 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+5823 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+289869 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+289883 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+289885 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+384  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 75133 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
+386  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
+416  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+416  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+723  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+751  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 24 ms. Found 4 JPA repository interfaces.
+1269 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1274 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1275 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1275 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
+1305 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1306 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 890 ms
+1382 [restartedMain] WARN  o.a.c.c.C.[Tomcat].[localhost].[/] – Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [5EC0ECF7AD1B5DA18C4AC4C691E2F5F3]
+1442 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1469 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
+1590 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+1641 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e218098
+1641 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+1654 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2154 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2159 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2381 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2513 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+2535 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@59f3bf2c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34173d56, org.springframework.security.web.context.SecurityContextHolderFilter@2ef128f3, org.springframework.security.web.header.HeaderWriterFilter@267aafdc, org.springframework.security.web.authentication.logout.LogoutFilter@4f708fa4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@100fa0c4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@48cd81df, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@66e32c78, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@684ea469, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@474452e4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1372241a, org.springframework.security.web.access.ExceptionTranslationFilter@28a45cd1, org.springframework.security.web.access.intercept.AuthorizationFilter@617b3a54]
+2663 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2686 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+2710 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+2718 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+2728 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.511 seconds (process running for 2.815)
+4558 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+4558 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+4559 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+858195 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m16s330ms).
+908155 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+908165 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+908167 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+384  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 75359 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
+386  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
+416  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+416  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+736  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+765  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+1269 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1274 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1274 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1274 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
+1305 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1305 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 889 ms
+1381 [restartedMain] WARN  o.a.c.c.C.[Tomcat].[localhost].[/] – Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [5E793C8CE43CC649DCAB349B06F02005]
+1443 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1473 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
+1595 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+1654 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@436fe13e
+1655 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+1669 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2149 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2156 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2374 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2504 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+2521 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4cab82ff, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@447ab08, org.springframework.security.web.context.SecurityContextHolderFilter@497de8ac, org.springframework.security.web.header.HeaderWriterFilter@44a323ca, org.springframework.security.web.authentication.logout.LogoutFilter@4522c401, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ed75197, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@91ab1a2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fbb53b0, org.springframework.security.web.access.ExceptionTranslationFilter@2ef5ff90, org.springframework.security.web.access.intercept.AuthorizationFilter@71873466]
+2656 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2679 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+2703 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+2710 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+2721 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.507 seconds (process running for 2.808)
+142532 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+142532 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+142533 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+142559 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound – No mapping for GET /order/changeOrderStatus/SEND_TO_KITCHEN/752
+147090 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound – No mapping for POST /order/changeOrderStatus/SEND_TO_KITCHEN/752
+224328 [http-nio-8080-exec-6] WARN  o.s.web.servlet.PageNotFound – No mapping for POST /order/changeOrderStatus/
+252477 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+252480 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+252481 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+372  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 75437 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
+374  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
+403  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+403  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+699  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+727  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 23 ms. Found 4 JPA repository interfaces.
+1225 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1230 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1231 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1231 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
+1261 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1262 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 859 ms
+1394 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1418 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
+1541 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+1594 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@455b5f7
+1595 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+1608 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2110 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2114 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2351 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2488 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+2507 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4c016032, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1cbee940, org.springframework.security.web.context.SecurityContextHolderFilter@63155061, org.springframework.security.web.header.HeaderWriterFilter@68d12723, org.springframework.security.web.authentication.logout.LogoutFilter@22dbeafc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ef5ff90, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23897e9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b45ae7a, org.springframework.security.web.access.ExceptionTranslationFilter@f058c6e, org.springframework.security.web.access.intercept.AuthorizationFilter@6cd7970d]
+2642 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2660 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
 2684 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-2691 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
-2702 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.485 seconds (process running for 2.782)
-7044 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
-7044 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
-7045 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
-27905 [http-nio-8080-exec-7] INFO  com.pizzeria.services.MailService – REGISTRATION EMAIL SENDED TO: jvtstml@gmail.com
-148944 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-148951 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-148953 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-378  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 46327 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
-379  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
-407  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-407  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-716  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-745  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 24 ms. Found 4 JPA repository interfaces.
-1260 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-1265 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-1265 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-1265 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
-1296 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-1297 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 890 ms
-1453 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-1480 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
+2692 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+2703 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.499 seconds (process running for 2.798)
+4546 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+4546 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+4547 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+4570 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound – No mapping for POST /order/changeOrderStatus/
+19129 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound – No mapping for POST /order/changeOrderStatus/
+60301 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound – No mapping for POST /order/changeOrderStatus/
+80670 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound – No mapping for POST /order/changeOrderStatus
+89847 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+89851 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+89852 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+391  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 75471 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
+393  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
+423  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+423  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+737  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+766  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 24 ms. Found 4 JPA repository interfaces.
+1270 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1277 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1277 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1277 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
+1308 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1308 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 885 ms
+1447 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1477 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
+1607 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+1656 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7575677
+1657 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+1674 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2167 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2171 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2402 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2555 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+2574 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2b75ef9b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@eb92192, org.springframework.security.web.context.SecurityContextHolderFilter@1b813e40, org.springframework.security.web.header.HeaderWriterFilter@56af18bc, org.springframework.security.web.authentication.logout.LogoutFilter@34d3015f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d01155f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20c1ee52, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70381dc, org.springframework.security.web.access.ExceptionTranslationFilter@213b7339, org.springframework.security.web.access.intercept.AuthorizationFilter@5dbf1ad5]
+2715 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2734 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+2765 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+2772 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+2783 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.561 seconds (process running for 2.863)
+6263 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+6263 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+6264 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+6300 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver – Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'status' for method parameter type ORDER_STATUS is not present]
+12919 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver – Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'status' for method parameter type ORDER_STATUS is not present]
+25465 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+25468 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+25470 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+407  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 75493 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
+408  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
+439  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+439  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+751  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+781  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+1289 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1294 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1295 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1295 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
+1328 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1328 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 889 ms
+1466 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1492 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
+1615 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+1668 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@30c3b80a
+1669 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+1685 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2181 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2186 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2410 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2552 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+2571 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1d9cf68c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29f19908, org.springframework.security.web.context.SecurityContextHolderFilter@547d2ccd, org.springframework.security.web.header.HeaderWriterFilter@48bf33ee, org.springframework.security.web.authentication.logout.LogoutFilter@60d4e924, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@588a87, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d99331c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@239feca1, org.springframework.security.web.access.ExceptionTranslationFilter@6fb5ad7c, org.springframework.security.web.access.intercept.AuthorizationFilter@39f1b512]
+2701 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2726 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+2754 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+2762 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+2773 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.53 seconds (process running for 2.851)
+5244 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+5244 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+5245 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+23368 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+23372 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+23374 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+399  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 75512 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
+401  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
+432  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+432  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+762  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+795  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 28 ms. Found 4 JPA repository interfaces.
+1301 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1305 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1306 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1306 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
+1338 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1338 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 905 ms
+1476 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1500 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
+1631 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+1681 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a4d4b0
+1682 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+1697 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2213 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2218 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2449 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2578 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+2595 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7afb5001, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@541db764, org.springframework.security.web.context.SecurityContextHolderFilter@8e7c954, org.springframework.security.web.header.HeaderWriterFilter@5e40895, org.springframework.security.web.authentication.logout.LogoutFilter@4f058cc7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27da4c1c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@411c1175, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d8bd905, org.springframework.security.web.access.ExceptionTranslationFilter@366b3377, org.springframework.security.web.access.intercept.AuthorizationFilter@494ce08a]
+2726 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2750 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+2771 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+2779 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+2790 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.573 seconds (process running for 2.889)
+5351 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+5352 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+5352 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 0 ms
+5375 [http-nio-8080-exec-1] WARN  o.s.web.servlet.PageNotFound – No mapping for POST /order/changeOrderStatus
+16085 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+16089 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+16090 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+393  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 75529 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
+394  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
+423  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+423  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+735  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+764  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+1269 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1275 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1275 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1275 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
+1307 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1307 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 884 ms
+1449 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1475 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
+1604 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+1658 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@109e46d3
+1659 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+1673 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2172 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2177 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2414 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2545 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+2564 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@541db764, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d8bd905, org.springframework.security.web.context.SecurityContextHolderFilter@2de2d87d, org.springframework.security.web.header.HeaderWriterFilter@642dd3fe, org.springframework.security.web.authentication.logout.LogoutFilter@78faedc5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39d2c2ec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ef67e18, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c4ff504, org.springframework.security.web.access.ExceptionTranslationFilter@1542c29f, org.springframework.security.web.access.intercept.AuthorizationFilter@6fe0d3f9]
+2704 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2725 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+2746 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+2753 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+2768 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.543 seconds (process running for 2.845)
+6186 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+6187 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+6187 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 0 ms
+6223 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver – Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.pizzeria.entity.enums.ORDER_STATUS'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.pizzeria.entity.enums.ORDER_STATUS] for value 'SEND_TO_KITCHEN']
+423247 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+423251 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+423253 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+379  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 75816 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
+381  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
+409  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+409  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+724  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+753  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 24 ms. Found 4 JPA repository interfaces.
+1266 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1271 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1271 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1272 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
+1303 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1303 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 893 ms
+1432 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1458 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
 1591 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-1638 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@19a7e0ba
-1639 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-1653 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2150 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2154 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-2380 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2516 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
-2538 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d1b90c6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@165e4e5e, org.springframework.security.web.context.SecurityContextHolderFilter@1ad56b7, org.springframework.security.web.header.HeaderWriterFilter@fe3dfd6, org.springframework.security.web.authentication.logout.LogoutFilter@53c59933, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@21d7412a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6c9f9c45, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@65aa8e40, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45162005, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5bc08920, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74fa0f79, org.springframework.security.web.access.ExceptionTranslationFilter@24247754, org.springframework.security.web.access.intercept.AuthorizationFilter@35e67b11]
-2676 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
-2693 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-2714 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-2721 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
-2735 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.522 seconds (process running for 2.818)
-5302 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
-5302 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
-5303 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
-23457 [http-nio-8080-exec-9] INFO  com.pizzeria.services.MailService – NEW ORDER EMAIL SENDED TO: jvtstml@gmail.com ORDER ID: 702
-108035 [http-nio-8080-exec-5] INFO  com.pizzeria.services.MailService – CANCEL ORDER EMAIL SENDED TO: jvtstml@gmail.com ORDER ID: 702
-144696 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-144713 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-144721 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+1642 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@21bc1c
+1643 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+1657 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2164 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2168 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2401 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2533 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+2550 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@23897e9d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@497de8ac, org.springframework.security.web.context.SecurityContextHolderFilter@18dd4dd7, org.springframework.security.web.header.HeaderWriterFilter@5fe2d70d, org.springframework.security.web.authentication.logout.LogoutFilter@2a918e00, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ac75863, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@145783f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@141d3f3a, org.springframework.security.web.access.ExceptionTranslationFilter@59c64701, org.springframework.security.web.access.intercept.AuthorizationFilter@d7cfc5c]
+2685 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2704 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+2725 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+2733 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+2743 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.531 seconds (process running for 2.832)
+6506 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+6506 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+6507 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+66144 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+66147 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+66149 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+429  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 75852 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
+431  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
+464  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+465  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+787  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+817  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+1331 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1337 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1337 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1337 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
+1371 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1371 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 906 ms
+1507 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1531 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
+1656 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+1704 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@21bc1c
+1705 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+1719 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2235 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2241 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2482 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2640 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+2659 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@23897e9d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@497de8ac, org.springframework.security.web.context.SecurityContextHolderFilter@18dd4dd7, org.springframework.security.web.header.HeaderWriterFilter@5fe2d70d, org.springframework.security.web.authentication.logout.LogoutFilter@2a918e00, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ac75863, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@145783f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@141d3f3a, org.springframework.security.web.access.ExceptionTranslationFilter@59c64701, org.springframework.security.web.access.intercept.AuthorizationFilter@d7cfc5c]
+2797 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2818 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+2842 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+2850 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+2862 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.613 seconds (process running for 2.945)
+10950 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+10950 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+10951 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+40466 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+40470 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+40472 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+402  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 75877 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
+404  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
+434  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+434  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+770  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+800  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
+1314 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1320 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1320 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1320 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
+1352 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1353 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 918 ms
+1483 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1507 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
+1636 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+1689 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1aebcc65
+1690 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+1706 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2199 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2204 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2435 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2564 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+2583 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@145783f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1fb9b05e, org.springframework.security.web.context.SecurityContextHolderFilter@4c62a6c1, org.springframework.security.web.header.HeaderWriterFilter@8fb2d5f, org.springframework.security.web.authentication.logout.LogoutFilter@6352da69, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5720cc8e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7cb19de8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@795aa818, org.springframework.security.web.access.ExceptionTranslationFilter@785ea3c7, org.springframework.security.web.access.intercept.AuthorizationFilter@17713263]
+2718 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2737 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+2758 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+2765 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+2776 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.541 seconds (process running for 2.862)
+5412 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+5412 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+5414 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+6234 [http-nio-8080-exec-2] INFO  com.pizzeria.services.MailService – CANCEL ORDER EMAIL SENDED TO: jvtstml@gmail.com ORDER ID: 752
+16691 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound – No mapping for GET /login
+23803 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+23806 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+23807 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+367  [restartedMain] INFO  com.pizzeria.Pizzeria – Starting Pizzeria using Java 17.0.4.1 with PID 75908 (/Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore/build/classes/java/main started by petr in /Users/petr/Documents/4sem/Курсовая Java Spring/Spring_pizzaStore)
+369  [restartedMain] INFO  com.pizzeria.Pizzeria – No active profile set, falling back to 1 default profile: "default"
+398  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+398  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+696  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+724  [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 23 ms. Found 4 JPA repository interfaces.
+1228 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1233 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1233 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1233 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.7]
+1263 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1264 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 866 ms
+1391 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+1415 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
+1541 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+1590 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1bab6117
+1590 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+1604 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2113 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2117 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2347 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2484 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+2508 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d451274, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@91ab1a2, org.springframework.security.web.context.SecurityContextHolderFilter@2050dd0d, org.springframework.security.web.header.HeaderWriterFilter@46487d89, org.springframework.security.web.authentication.logout.LogoutFilter@766cd2bb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ed75197, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2ca2c2e7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4a71155a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c2e7f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b962c29, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a00aaf9, org.springframework.security.web.access.ExceptionTranslationFilter@497529af, org.springframework.security.web.access.intercept.AuthorizationFilter@141d3f3a]
+2649 [restartedMain] WARN  o.t.templatemode.TemplateMode – [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2666 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+2685 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+2692 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+2702 [restartedMain] INFO  com.pizzeria.Pizzeria – Started Pizzeria in 2.499 seconds (process running for 2.779)
+6382 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+6382 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+6383 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+1038184 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m46s455ms).
+5620850 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m22s104ms).
+7145573 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m24s654ms).
+12179709 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52m53s888ms).
+12650464 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+12650471 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+12650473 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.

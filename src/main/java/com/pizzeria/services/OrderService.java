@@ -40,7 +40,7 @@ public class OrderService {
         order.setCreationDate(dateNow);
         pizzaService.cleanCart(userName);
         orderRepository.save(order);
-        mailService.sendNewOrderEmail(user, order);
+        //mailService.sendNewOrderEmail(user, order);
 
     }
 
@@ -56,7 +56,7 @@ public class OrderService {
     public void cancelOrder(Long orderID) {
         Order order = orderRepository.findById(orderID).get();
         order.setStatus(ORDER_STATUS.CLOSED);
-        mailService.sendCancelOrderEmail(order.getClient(), order);
+        //mailService.sendCancelOrderEmail(order.getClient(), order);
         orderRepository.deleteById(orderID);
     }
 }

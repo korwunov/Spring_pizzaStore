@@ -1,8 +1,6 @@
 package com.pizzeria.services;
 
 import com.pizzeria.entity.classes.Cart;
-import com.pizzeria.entity.classes.Pizza;
-import com.pizzeria.entity.classes.User;
 import com.pizzeria.entity.interfaces.CartInterface;
 import com.pizzeria.repositories.CartRepository;
 import com.pizzeria.repositories.PizzaRepository;

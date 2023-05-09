@@ -35,25 +35,46 @@
 
 </header>
 <main>
-    <div class="container">
+    <div class="container" style="width: 1000px;">
         <section>
             <h2 sec:authorize="hasRole('ROLE_USER')">Мои заказы</h2>
             <h2 sec:authorize="hasRole('ROLE_ADMIN')">Все заказы</h2>
             <div class="table">
                 <tr th:each="order : ${allOrders}">
                     <div class="table_item">
-                        <span><td th:text="${order.getID()}"></td></span>
-                        <span><td sec:authorize="hasRole('ROLE_ADMIN') || hasRole('ROLE_EMPLOYEE')" th:utext="${order.getClient().getID()}"></td></span>
-                        <span class="table_item_status"><td sec:authorize="hasRole('ROLE_USER')" th:text="${order.getStatus()}"></td></span>
-                        <span class="table_change_status">
-                            <td sec:authorize="hasRole('ROLE_ADMIN') || hasRole('ROLE_EMPLOYEE')" >
-                                <form th:action="@{/order/}" method="post">
-
+                        <span>
+                            <p style="font-size: 0.6em; line-height: 0;">Номер заказа</p>
+                            <td th:text="${order.getID()}"></td>
+                        </span>
+                        <span sec:authorize="hasRole('ROLE_ADMIN') || hasRole('ROLE_EMPLOYEE')">
+                            <p style="font-size: 0.6em; line-height: 0;">Пользователь</p>
+                            <td th:utext="${order.getClient().getEmail()}"></td>
+                        </span>
+                        <span class="table_item_status" sec:authorize="hasRole('ROLE_USER')">
+                            <p style="font-size: 0.6em; line-height: 0;">Статус заказа</p>
+                            <td th:text="${order.getStatus()}"></td>
+                        </span>
+                        <span class="table_change_status" sec:authorize="hasRole('ROLE_ADMIN') || hasRole('ROLE_EMPLOYEE')">
+                            <td>
+                                <form th:action="@{/order/changeOrderStatus}" method="post">
+                                    <select>
+		                                <option value="CREATED" selected>Создан</option>
+		                                <option value="SENT_TO_KITCHEN">Отправлен на кухню</option>
+		                                <option value="COOKED">Приготовлен</option>
+		                                <option value="SENT_TO_DELIVERY">Передан в доставку</option>
+                                        <option value="DELIVERED_TO_CLIENT">Доставлен</option>
+	                                </select>
                                 </form>
                             </td>
                         </span>
-                        <span class="table_item_price"><td th:text="${order.getPrice()}"></td></span>
-                        <span class="table_item_name"><td th:text="${order.getAddress()}"></td></span>
+                        <span class="table_item_price">
+                            <p style="font-size: 0.6em; line-height: 0;">Стоимость</p>
+                            <td th:text="${order.getPrice()}"></td>
+                        </span>
+                        <span class="table_item_name">
+                            <p style="font-size: 0.6em; line-height: 0;">Адрес доставки</p>
+                            <td th:text="${order.getAddress()}"></td>
+                        </span>
                         <form th:action="@{/order/cancelOrder/{id}(id=${order.getID()})}" method="post" ><button><img th:src="@{/images/cancel.png}"></button></form>
                     </div>
                 </tr>
